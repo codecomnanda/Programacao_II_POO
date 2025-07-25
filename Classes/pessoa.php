@@ -24,6 +24,11 @@ class Pessoa { //criação de classe chamada Pessoa
         echo "<br>Telefone: " . $this->telefone;    
         echo "<br>Data de Nascimento: " . $this->datanascimento;
     }
+    // Método destrutor
+    function __destruct() {
+        // Aqui você pode liberar recursos ou realizar outras ações quando o objeto for destruído
+        echo "<br>Objeto Finalizado.";
+    }
 }
 
 ?>
