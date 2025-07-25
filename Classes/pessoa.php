@@ -7,6 +7,15 @@ class Pessoa { //criação de classe chamada Pessoa
     public $telefone;
     public $datanascimento;
 
+    //construtor
+    function __construct($nome, $email, $telefone, $datadenascimento) {
+
+        $this->nome = $nome;
+        $this->email = $email;
+        $this->telefone = $telefone;
+        $this->datanascimento = $datadenascimento;
+    }
+
     // Métodos (funções)
     public function getPessoa() {
     
